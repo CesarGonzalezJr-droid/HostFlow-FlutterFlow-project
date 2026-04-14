@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../auth_manager.dart';
+import '/services/auth_profile_service.dart';
 
 import '/backend/backend.dart';
 import 'anonymous_auth.dart';
@@ -304,7 +305,7 @@ class FirebaseAuthManager extends AuthManager
     try {
       final userCredential = await signInFunc();
       if (userCredential?.user != null) {
-        await maybeCreateUser(userCredential!.user!);
+        await AuthProfileService.ensureUserProfile(userCredential!.user!);
       }
       return userCredential == null
           ? null

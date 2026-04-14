@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32117214118",
+    "project_id": "hostflow-fe38e",
+    "storage_bucket": "hostflow-fe38e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32117214118:android:25b45084a3787bd2311d67",
+        "android_client_info": {
+          "package_name": "com.mycompany.hostflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjxzjXPF0y2BgIlay6Z4nJz9TX8GNgkrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
